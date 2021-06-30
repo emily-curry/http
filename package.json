@@ -12,7 +12,8 @@
     "fmt": "npm run prettier -- --write",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "prepublishOnly": "npm run build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postinstall": "npm run build"
   },
   "author": "Max Lynch <max@ionic.io>, Thomas Vidas <thomas@ionic.io>",
   "license": "MIT",
